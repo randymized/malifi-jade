@@ -1,0 +1,33 @@
+{
+  "name": "malifi-jade",
+  "version": "0.1.0",
+  "description": "Adds Jade template support to Malifi.",
+  "keywords": [],
+  "author": "Randy McLaughlin <8b629a9884@snkmail.com>",
+  "dependencies": {
+    "jade": "0.28.x",
+    "coffee-script": "1.6.x",
+    "underscore": "1.4.x"
+  },
+  "devDependencies": {
+    "malifi": "0.x.x",
+    "mocha": "1.6.x"
+  },
+  "main": "index",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "d7396ed0cf057ea1309ab3886b6fcccfecb32c14",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/randymized/malifi-jade.git"
+  },
+  "license": "MIT"
+}

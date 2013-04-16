@@ -1,0 +1,8 @@
+support
+test
+src
+my
+examples
+*.sock
+.idea
+subprojects
