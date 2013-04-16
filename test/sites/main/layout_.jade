@@ -1,0 +1,12 @@
+html
+  head
+    if (typeof(title) === 'undefined')
+      title My Site
+    else
+      title #{title}
+    block scripts
+  body
+    block content
+    block foot
+      #footer
+        p some footer content

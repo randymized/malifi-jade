@@ -37,6 +37,8 @@ get= (url, expected, statusCode, done)->
     host: host,
     port: port,
     path: url
+    headers:
+      accept: 'text/html'
   req= http.get options, (res)->
     if typeof expected is 'number'
       res.statusCode.should.equal(expected)
@@ -52,3 +54,6 @@ describe 'Malifi', ->
 
   it 'should render a jade template', (done) ->
     get('/jaded','<div id="user">me &lt;human@example.com&gt;</div>', done)
+
+  it 'should render a bare jade template that has extends a layout template', (done) ->
+    get('/extended','<html><head><title>My Site</title></head><body><h1>a simple page</h1><p>my content</p><div id="footer"><p>some footer content</p></div></body></html>', done)
