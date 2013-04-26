@@ -1,9 +1,6 @@
 html
   head
-    if (typeof(title) === 'undefined')
-      title My Site
-    else
-      title #{title}
+    include title_
     block scripts
   body
     block content

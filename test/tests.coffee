@@ -57,3 +57,9 @@ describe 'Malifi', ->
 
   it 'should render a bare jade template that has extends a layout template', (done) ->
     get('/extended','<html><head><title>My Site</title></head><body><h1>a simple page</h1><p>my content</p><div id="footer"><p>some footer content</p></div></body></html>', done)
+
+  # Answers the question of whether an include in another included or extended file is relative to the original file or to the
+  # included file.  Shows that include and extends are indeed relative to the file they are in and jumping around paths is not
+  # a problem.
+  it 'should render jade template in a subdirectory based upon a layout in the main directory that in turn includes another main directory file', (done) ->
+    get('/sub/sub/extended','<html><head><title>My Site</title></head><body><h1>a simple page</h1><p>my content</p><div id="footer"><p>some footer content</p></div></body></html>', done)
