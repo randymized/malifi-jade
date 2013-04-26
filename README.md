@@ -1,7 +1,7 @@
 malifi-jade
 ===========
 
-Adds Jade template support to Malifi.
+Adds Jade template support to [Malifi](https://github.com/randymized/malifi).
 
 Usage:
 In the metadata `template_map_` object for the target MIME type, map file extension(s) to `malifi-jade`.
