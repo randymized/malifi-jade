@@ -4,6 +4,10 @@
   "description": "Adds Jade template support to Malifi.",
   "keywords": [],
   "author": "Randy McLaughlin <8b629a9884@snkmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/randymized/malifi-jade.git"
+  },
   "dependencies": {
     "jade": "0.28.x",
     "coffee-script": "1.6.x",
